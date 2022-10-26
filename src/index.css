@@ -496,7 +496,7 @@ body .modal {
 }
 
 .swal2-html-container {
-    font-size: 2.4em;
+    font-size: 2.4em!important;
 }
 
 /* .swal2-styled.swal2-confirm {
