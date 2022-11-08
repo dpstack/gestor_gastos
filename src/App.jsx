@@ -60,6 +60,7 @@ function App() {
       /* Actualizar */
       const gastosUpdate = gastos.map(gastoState => gastoState.id === gasto.id ? gasto : gastoState);
       setGastos(gastosUpdate);
+      setGastosFiltrados(gastosUpdate)
       setGastoEditar({});
       Swal.fire('Bien Hecho!', 'El gasto se ha actualizado correctamente!', 'success');
     } else {
@@ -79,6 +80,7 @@ function App() {
   const deleteGasto = id => {
     const gastosUpdate = gastos.filter( gasto => gasto.id !== id );
     setGastos(gastosUpdate);
+    setGastosFiltrados(gastosUpdate)
   }
 
   return (
